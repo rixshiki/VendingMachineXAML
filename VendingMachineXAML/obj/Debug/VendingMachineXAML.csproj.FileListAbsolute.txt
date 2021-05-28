@@ -1,0 +1,16 @@
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\bin\Debug\VendingMachineXAML.exe.config
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\bin\Debug\VendingMachineXAML.exe
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\bin\Debug\VendingMachineXAML.pdb
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\obj\Debug\VendingMachineXAML.csprojAssemblyReference.cache
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\obj\Debug\MainWindow.g.cs
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\obj\Debug\App.g.cs
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\obj\Debug\VendingMachineXAML_MarkupCompile.cache
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\obj\Debug\VendingMachineXAML_MarkupCompile.lref
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\obj\Debug\App.baml
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\obj\Debug\MainWindow.baml
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\obj\Debug\VendingMachineXAML.g.resources
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\obj\Debug\VendingMachineXAML.Properties.Resources.resources
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\obj\Debug\VendingMachineXAML.csproj.GenerateResource.cache
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\obj\Debug\VendingMachineXAML.csproj.CoreCompileInputs.cache
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\obj\Debug\VendingMachineXAML.exe
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\obj\Debug\VendingMachineXAML.pdb

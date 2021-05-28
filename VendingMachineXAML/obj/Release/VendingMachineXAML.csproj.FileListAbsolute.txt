@@ -1,0 +1,4 @@
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\obj\Release\VendingMachineXAML.csprojAssemblyReference.cache
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\obj\Release\VendingMachineXAML.Properties.Resources.resources
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\obj\Release\VendingMachineXAML.csproj.GenerateResource.cache
+D:\Nice\Sara\NiceCoding\ProjectPractice\dotNet\VendingMachineXAML\VendingMachineXAML\obj\Release\VendingMachineXAML.csproj.CoreCompileInputs.cache

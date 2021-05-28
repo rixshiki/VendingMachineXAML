@@ -1,0 +1,73 @@
+﻿<Window x:Class="VendingMachineXAML.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VendingMachineXAML" xmlns:viewmodels="clr-namespace:VendingMachineXAML.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:MachineViewModel}"
+        mc:Ignorable="d"
+        Title="VENDING MACHINE" Height="600" Width="500">
+    <Grid Background="DarkSlateBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="5">
+            <TextBlock Style="{StaticResource TitleText}">DRINK MACHINE</TextBlock>
+        </StackPanel>
+
+        <ListView Style="{StaticResource VendingList}" x:Name="ItemList" ItemsSource="{Binding Items}" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="5">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <DockPanel>
+                        <Button Style="{StaticResource VendingButton}" DockPanel.Dock="Left" DataContext="{Binding}" Click="PurchaseButton_Click" Content="PICK"/>
+                        <StackPanel DockPanel.Dock="Right">
+                            <TextBlock Style="{StaticResource NameItem}" Text="{Binding Information.Name}"/>
+                            <TextBlock Style="{StaticResource DetailItem}" Text="{Binding ShowItemPrice}"/>
+                            <TextBlock Style="{StaticResource DetailItem}" Text="{Binding ShowItemQuantity}"/>
+                        </StackPanel>
+                    </DockPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <StackPanel Style="{StaticResource CashDisplay}" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2">
+            <TextBlock Style="{StaticResource CashText}" Text="{Binding Payment.Inserted}"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2">
+            <TextBlock HorizontalAlignment="Center" Foreground="White" Text="Insert Money"/>
+            <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                <Button Style="{StaticResource CashButton}" Background="LightGreen" Content="20฿" Click="Insert20_Click"/>
+                <Button Style="{StaticResource CashButton}" Background="LightBlue" Content="50฿" Click="Insert50_Click"/>
+                <Button Style="{StaticResource CashButton}" Background="LightCoral" Content="100฿" Click="Insert100_Click"/>
+                <Button Style="{StaticResource CashButton}" Background="Violet" Content="500฿" Click="Insert500_Click"/>
+                <Button Style="{StaticResource CashButton}" Background="RosyBrown" Content="1000฿" Click="Insert1000_Click"/>
+            </WrapPanel>
+        </StackPanel>
+
+        <Button Style="{StaticResource ChangeButton}" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2" Content="Return Change" Click="ReturnChangeButton_Click"/>
+
+        <StackPanel Style="{StaticResource ManagerBlock}" Grid.Row="4" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <TextBlock HorizontalAlignment="Center" FontSize="14" Text="MANAGE MACHINE"/>
+            <Button x:Name="RefillButton" Style="{StaticResource ManagerButton}" Content="Refill Supply" Click="RefillButton_Click"/>
+            <Button x:Name="EmptyButton" Style="{StaticResource ManagerButton}" Content="Empty Supply" Click="EmptyButton_Click"/>
+            <Button Style="{StaticResource ManagerButton}" Content="{Binding Payment.ShowCollectPayment}" Click="CollectPaymentButton_Click"/>
+        </StackPanel>
+        
+        <Button Style="{StaticResource CollectItem}" Grid.Row="6" Grid.ColumnSpan="5" Grid.RowSpan="2" Click="CollectItemButton_Click" Content="{Binding ShowBills}"></Button>
+    </Grid>
+</Window>
